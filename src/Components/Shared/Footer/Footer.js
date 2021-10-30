@@ -1,15 +1,27 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInfo,
+  faShoppingCart,
+  faStar,
+  faStarHalf,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faInstagram,
+  faPinterest,
+  faTwitter,
+  faVimeo,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
     <div>
       <div id="footer" className="border-0 bg-transparent">
         <div className="container clearfix">
-          {/* <!-- Footer Widgets
-    ============================================= --> */}
           <div
             className="footer-widgets-wrap clearfix"
-            style={{padding: '60px 0 100px'}}
+            style={{ padding: "60px 0 100px" }}
           >
             <div className="row">
               <div className="col-lg-6 col-md-6">
@@ -80,8 +92,10 @@ const Footer = () => {
                       className="social-icon si-dark si-mini si-rounded si-facebook"
                       title="Facebook"
                     >
-                      <i className="icon-facebook"></i>
-                      <i className="icon-facebook"></i>
+                      <FontAwesomeIcon
+                        className="p-1 custom-icon"
+                        icon={faFacebook}
+                      />
                     </a>
 
                     <a
@@ -89,8 +103,10 @@ const Footer = () => {
                       className="social-icon si-dark si-mini si-rounded si-twitter"
                       title="Twitter"
                     >
-                      <i className="icon-twitter"></i>
-                      <i className="icon-twitter"></i>
+                      <FontAwesomeIcon
+                        className="p-1 custom-icon"
+                        icon={faTwitter}
+                      />
                     </a>
 
                     <a
@@ -98,8 +114,10 @@ const Footer = () => {
                       className="social-icon si-dark si-mini si-rounded si-instagram"
                       title="Instagram"
                     >
-                      <i className="icon-instagram"></i>
-                      <i className="icon-instagram"></i>
+                      <FontAwesomeIcon
+                        className="p-1 custom-icon"
+                        icon={faInstagram}
+                      />
                     </a>
 
                     <a
@@ -107,8 +125,10 @@ const Footer = () => {
                       className="social-icon si-dark si-mini si-rounded si-pinterest"
                       title="Pinterest"
                     >
-                      <i className="icon-pinterest"></i>
-                      <i className="icon-pinterest"></i>
+                      <FontAwesomeIcon
+                        className="p-1 custom-icon"
+                        icon={faPinterest}
+                      />
                     </a>
 
                     <a
@@ -116,8 +136,10 @@ const Footer = () => {
                       className="social-icon si-dark si-mini si-rounded si-vimeo"
                       title="Vimeo"
                     >
-                      <i className="icon-vimeo"></i>
-                      <i className="icon-vimeo"></i>
+                      <FontAwesomeIcon
+                        className="p-1 custom-icon"
+                        icon={faVimeo}
+                      />
                     </a>
                   </div>
                 </div>

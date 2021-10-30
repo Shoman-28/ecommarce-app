@@ -20,7 +20,7 @@ const ShoppingCard = () => {
  
   return (
     <div>
-      <div className="section dark mb-0">
+      <div className="section dark mb-0 mt-0">
         <div className="container clearfix">
           <div className="row payments-info">
             <div className="col-lg-6">
