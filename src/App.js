@@ -18,6 +18,10 @@ function App() {
   const product = [
     { id: 1, name: "Grey Messenger Bag", price: "11.99", img: productImg },
     { id: 2, name: "Grey Messenger Bag", price: "11.99", img: productImg },
+    { id: 3, name: "Grey Messenger Bag", price: "11.99", img: productImg },
+    { id: 4, name: "Grey Messenger Bag", price: "11.99", img: productImg },
+    { id: 5, name: "Grey Messenger Bag", price: "11.99", img: productImg },
+    { id: 6, name: "Grey Messenger Bag", price: "11.99", img: productImg },
   ];
   const [products, setProducts] = useState({ pds: product, cart: [] });
 
@@ -33,7 +37,7 @@ function App() {
         <Header />
         <Home />
         <Product />
-        <AddToCard/>
+        {/* <AddToCard/> */}
       </div>
     </productsContext.Provider>
   );

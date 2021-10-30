@@ -8,6 +8,7 @@ import ManAndWomen from './Man&Women/ManAndWomen';
 import ShopCategories from '../ShopCategories/ShopCategories';
 import ShoppingCard from './ShoppingCard/ShoppingCard';
 import Footer from '../Shared/Footer/Footer';
+import Product from '../Product/Product';
 
 const Home = () => {
     return (
