@@ -35,7 +35,7 @@ function App() {
     <productsContext.Provider value={{ products, setProducts }}>
       <div className="">
         <Header />
-        <Home />
+        {/* <Home /> */}
         <Product />
         {/* <AddToCard/> */}
       </div>

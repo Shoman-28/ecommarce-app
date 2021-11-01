@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Card } from "react-bootstrap";
 import Button from "@restart/ui/esm/Button";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,17 +6,28 @@ import { faShoppingCart, faStar } from "@fortawesome/free-solid-svg-icons";
 
 import { productsContext } from "../../../App";
 
+import axios from "axios";
+import { useHistory } from "react-router";
 const ProductCard = () => {
+
+
+
+  const history = useHistory();
   const { products, setProducts } = useContext(productsContext);
 
   const handleAddToCart = (pd) => {
     const newCart = { ...products, cart: [...products.cart, pd] };
-    console.log(newCart);
     setProducts(newCart);
 
     localStorage.setItem("cart", JSON.stringify(newCart.cart));
   };
 
+
+  
+    // const handleOrderNow = (id) => {
+    //   history.push("/buyProcuct/" + id);
+    //   console.log(id);
+    // };
   return (
     <>
       {products.pds?.length === 0
@@ -28,15 +39,30 @@ const ProductCard = () => {
                 <Card.Body style={{ background: "#f9f9f9" }}>
                   <Card.Title className="card-name">Leather Bag</Card.Title>
                   <Card.Text className="card-details">{pd.name}</Card.Text>
-                 
+
                   <div className="dfh">
-                  <FontAwesomeIcon className="p-1 custom-icon" icon={faStar} />
-                  <FontAwesomeIcon className="p-1 custom-icon" icon={faStar} />
-                  <FontAwesomeIcon className="p-1 custom-icon" icon={faStar} />
-                  <FontAwesomeIcon className="p-1 custom-icon" icon={faStar} />
-                  <FontAwesomeIcon className="p-1 custom-icon" icon={faStar} />
-                </div>
-                 
+                    <FontAwesomeIcon
+                      className="p-1 custom-icon"
+                      icon={faStar}
+                    />
+                    <FontAwesomeIcon
+                      className="p-1 custom-icon"
+                      icon={faStar}
+                    />
+                    <FontAwesomeIcon
+                      className="p-1 custom-icon"
+                      icon={faStar}
+                    />
+                    <FontAwesomeIcon
+                      className="p-1 custom-icon"
+                      icon={faStar}
+                    />
+                    <FontAwesomeIcon
+                      className="p-1 custom-icon"
+                      icon={faStar}
+                    />
+                  </div>
+
                   <div
                     className="
                   add-product-btn d-flex justify-content-between"
