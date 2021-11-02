@@ -9,8 +9,18 @@ import Header from "./Components/Header/Header";
 import Product from "./Components/Product/Product";
 import AddToCard from "./Components/AddToCard/AddToCard";
 import { createContext, useState, useEffect } from "react";
-import productImg from "./image/items/1-1.jpg";
+
+import productImg0 from "./image/shopping/shopping-0.jpg";
+import productImg1 from "./image/shopping/shopping-1.jpg";
+import productImg2 from "./image/shopping/shopping-2.jpg";
+import productImg3 from "./image/shopping/shopping-3.jpg";
+import productImg4 from "./image/shopping/shopping-4.jpg";
+import productImg5 from "./image/shopping/shopping-5.jpg";
+import productImg6 from "./image/shopping/shopping-6.jpg";
+import productImg7 from "./image/shopping/shopping-7.jpg";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import CardSlider from "./Components/BestSellProduct/ProductCard/ProductCard";
 
 export const productsContext = createContext();
 
@@ -20,45 +30,59 @@ function App() {
   const product = [
     {
       id: 1,
-      name: "Grey Messenger Bag",
-      price: "11.99",
-      img: productImg,
-      quantity: 2,
+      name: "Sun glasses and shopping bags",
+      price: "11.09",
+      img: productImg0,
+      quantity: 1,
     },
     {
       id: 2,
       name: "Grey Messenger Bag",
-      price: "11.99",
-      img: productImg,
-      quantity: 2,
+      price: "21.89",
+      img: productImg1,
+      quantity: 3,
     },
     {
       id: 3,
       name: "Grey Messenger Bag",
-      price: "11.99",
-      img: productImg,
-      quantity: 2,
+      price: "15.69",
+      img: productImg2,
+      quantity: 1,
     },
     {
       id: 4,
       name: "Grey Messenger Bag",
-      price: "11.99",
-      img: productImg,
+      price: "61.40",
+      img: productImg3,
       quantity: 2,
     },
     {
       id: 5,
       name: "Grey Messenger Bag",
-      price: "11.99",
-      img: productImg,
-      quantity: 2,
+      price: "22.55",
+      img: productImg4,
+      quantity: 3,
     },
     {
       id: 6,
       name: "Grey Messenger Bag",
-      price: "11.99",
-      img: productImg,
+      price: "31.30",
+      img: productImg5,
       quantity: 2,
+    },
+    {
+      id: 7,
+      name: "Grey Messenger Bag",
+      price: "43.10",
+      img: productImg6,
+      quantity: 1,
+    },
+    {
+      id: 8,
+      name: "Grey Messenger Bag",
+      price: "32.33",
+      img: productImg7,
+      quantity: 3,
     },
   ];
   const [products, setProducts] = useState({ pds: product, cart: [] });
@@ -75,6 +99,7 @@ function App() {
         <Switch>
           <Route path="/home">
             <Header />
+            <CardSlider/>
             <Home />
           </Route>
           <Route path="/users">
