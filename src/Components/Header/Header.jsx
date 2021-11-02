@@ -13,9 +13,7 @@ import { useForm } from "react-hook-form";
 const Header = () => {
   
   const [show, setShow] = useState(true);
- 
-  const { register, handleSubmit,  formState: { errors } } = useForm();
-  const onSubmit = data => console.log(data); 
+
 
   return (
     <div id="header" className="full-header no-sticky" data-menu-padding="30">

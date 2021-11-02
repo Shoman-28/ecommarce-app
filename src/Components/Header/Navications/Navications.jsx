@@ -6,6 +6,7 @@ import grayBag from '../../../image/items/1-1.jpg';
 import itemImgae1 from '../../../image/items/2-1.jpg';
 import itemImgae2 from '../../../image/items/3-1.jpg';
 import itemImgae3 from '../../../image/items/4-1.jpg';
+import { Link } from "react-router-dom";
 const Navications = () => {
     const categories=[        
     {name:'Backpacks'},
@@ -40,9 +41,9 @@ const WomenClothing=[
     <nav className="primary-menu style-ecommerce menu-spacing-margin">
       <ul className="menu-container">
         <li className="menu-item current">
-          <a className="menu-link" href="#">
+          <Link as={Link} to="/home" className="menu-link" href="#">
             <div>Home</div>
-          </a>
+          </Link>
         </li>
         <li className="menu-item mega-menu">
           <a className="menu-link" href="#">

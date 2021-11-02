@@ -10,18 +10,56 @@ import Product from "./Components/Product/Product";
 import AddToCard from "./Components/AddToCard/AddToCard";
 import { createContext, useState, useEffect } from "react";
 import productImg from "./image/items/1-1.jpg";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 export const productsContext = createContext();
 
 export const baseUrl = process.env.REACT_APP_BACKEND_URL;
 
 function App() {
   const product = [
-    { id: 1, name: "Grey Messenger Bag", price: "11.99", img: productImg },
-    { id: 2, name: "Grey Messenger Bag", price: "11.99", img: productImg },
-    { id: 3, name: "Grey Messenger Bag", price: "11.99", img: productImg },
-    { id: 4, name: "Grey Messenger Bag", price: "11.99", img: productImg },
-    { id: 5, name: "Grey Messenger Bag", price: "11.99", img: productImg },
-    { id: 6, name: "Grey Messenger Bag", price: "11.99", img: productImg },
+    {
+      id: 1,
+      name: "Grey Messenger Bag",
+      price: "11.99",
+      img: productImg,
+      quantity: 2,
+    },
+    {
+      id: 2,
+      name: "Grey Messenger Bag",
+      price: "11.99",
+      img: productImg,
+      quantity: 2,
+    },
+    {
+      id: 3,
+      name: "Grey Messenger Bag",
+      price: "11.99",
+      img: productImg,
+      quantity: 2,
+    },
+    {
+      id: 4,
+      name: "Grey Messenger Bag",
+      price: "11.99",
+      img: productImg,
+      quantity: 2,
+    },
+    {
+      id: 5,
+      name: "Grey Messenger Bag",
+      price: "11.99",
+      img: productImg,
+      quantity: 2,
+    },
+    {
+      id: 6,
+      name: "Grey Messenger Bag",
+      price: "11.99",
+      img: productImg,
+      quantity: 2,
+    },
   ];
   const [products, setProducts] = useState({ pds: product, cart: [] });
 
@@ -33,12 +71,25 @@ function App() {
   }, []);
   return (
     <productsContext.Provider value={{ products, setProducts }}>
-      <div className="">
-        <Header />
-        {/* <Home /> */}
-        <Product />
-        {/* <AddToCard/> */}
-      </div>
+      <Router>
+        <Switch>
+          <Route path="/home">
+            <Header />
+            <Home />
+          </Route>
+          <Route path="/users">
+            <Product />
+          </Route>
+          <Route path="/viewCart">
+            <Header />
+            <AddToCard />
+          </Route>
+          <Route exact path="/">
+            <Header />
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </productsContext.Provider>
   );
 }
