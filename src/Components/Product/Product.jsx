@@ -2,12 +2,9 @@ import axios from "axios";
 import React, { useContext, useState } from "react";
 
 import { baseUrl, productsContext } from "../../App";
-import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
+
 
 import ProductCard from "./ProductCard/ProductCard";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 
 const Product = () => {
