@@ -2,11 +2,9 @@ import "./App.css";
 import "./Components/CSS/ecommerce.css";
 import "./Components/CSS/fonts.css";
 import "./Components/CSS/style.css";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Home/Home";
 import Header from "./Components/Header/Header";
-import Product from "./Components/Product/Product";
 import AddToCard from "./Components/AddToCard/AddToCard";
 import { createContext, useState, useEffect } from "react";
 
@@ -20,7 +18,10 @@ import productImg6 from "./image/shopping/shopping-6.jpg";
 import productImg7 from "./image/shopping/shopping-7.jpg";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import CardSlider from "./Components/BestSellProduct/ProductCard/ProductCard";
+import AllProduct from "./Components/BestSellProduct/ProductCard/ProductCard";
+import Footer from "./Components/Shared/Footer/Footer";
+import Blog from "./Components/Blog/Blog";
+import Contact from "./Components/ContactPage/Contact";
 
 export const productsContext = createContext();
 
@@ -99,19 +100,33 @@ function App() {
         <Switch>
           <Route path="/home">
             <Header />
-            <CardSlider/>
-            <Home />
+              <Home />
+              <Footer />
           </Route>
-          <Route path="/users">
-            <Product />
+          <Route path="/allProduct">
+            <Header />
+            <AllProduct />
+            <Footer />
           </Route>
           <Route path="/viewCart">
             <Header />
             <AddToCard />
+            <Footer />
+          </Route>
+          <Route path="/blog">
+            <Header />
+            <Blog/>
+            <Footer />
+          </Route>
+          <Route path="/contact">
+            <Header />
+            <Contact/>
+            <Footer />
           </Route>
           <Route exact path="/">
             <Header />
             <Home />
+            <Footer />
           </Route>
         </Switch>
       </Router>

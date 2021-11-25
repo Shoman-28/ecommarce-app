@@ -15,11 +15,11 @@ const Contents = () => {
           <div className="col-md-2">
             <div className="grid-info clearfix content-text">
               <h3>
-                <a href="#">
+                <a href="/allProduct">
                   Fresh Arrivals<span>Summer is Coming!</span>
                 </a>
               </h3>
-              <a href="#" className="more-link clearfix contant">
+              <a href="/allProduct" className="more-link clearfix contant">
                 Shop Now
               </a>
             </div>
@@ -35,7 +35,7 @@ const Contents = () => {
                   <span>Check out more Products for your Lifestyles</span>
                 </a>
               </h3>
-              <a href="#" className="more-link clearfix contant">
+              <a href="/allProduct" className="more-link clearfix contant">
                 Know More
               </a>
             </div>
@@ -52,7 +52,7 @@ const Contents = () => {
               </h3>
               <i className="icon-map-marker2"></i>{" "}
               <a
-                href=""
+                href="/allProduct"
                 dataLightbox="iframe"
                 className="more-link clearfix contant"
               >

@@ -21,7 +21,7 @@ const Home = () => {
             <ManAndWomen/>
             <ShopCategories/>
             <ShoppingCard/>
-            <Footer/>
+           
         </div>
     );
 };

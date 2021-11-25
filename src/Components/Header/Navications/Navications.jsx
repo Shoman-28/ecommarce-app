@@ -1,55 +1,60 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInfo, faShoppingCart, faStar, faStarHalf } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faInfo,
+  faShoppingCart,
+  faStar,
+  faStarHalf,
+} from "@fortawesome/free-solid-svg-icons";
 
-import grayBag from '../../../image/items/1-1.jpg';
-import itemImgae1 from '../../../image/items/2-1.jpg';
-import itemImgae2 from '../../../image/items/3-1.jpg';
-import itemImgae3 from '../../../image/items/4-1.jpg';
+import grayBag from "../../../image/items/1-1.jpg";
+import itemImgae1 from "../../../image/items/2-1.jpg";
+import itemImgae2 from "../../../image/items/3-1.jpg";
+import itemImgae3 from "../../../image/items/4-1.jpg";
 import { Link } from "react-router-dom";
 const Navications = () => {
-    const categories=[        
-    {name:'Backpacks'},
-    {name:'Leather Bag'},
-    {name:'Travel Bag'},
-    {name:'Trolley'},
-    {name:'Workout Bag'},
-]
-    const popular=[        
-    {name:'United Colors'},
-    {name:'Burton London'},
-    {name:'Calvin Clein Jeans'},
-    {name:'Top Ten'},
-    {name:'Armyni'},
-]  
-const WomenfootWere=[        
-    {name:'Casual Shoes'},
-    {name:'Formal Shoes'},
-    {name:'Sports Shoes'},
-    {name:'Party  Shoes'},
-    {name:'Slippers'},
-]
-const WomenClothing=[
-    {name:'Casual Shirt'},
-    {name:'T-Shirts'},
-    {name:'Collared Tees'},
-    {name:'Sweamwear'},
-    {name:'Pants'},
-]
+  const categories = [
+    { name: "Backpacks" },
+    { name: "Leather Bag" },
+    { name: "Travel Bag" },
+    { name: "Trolley" },
+    { name: "Workout Bag" },
+  ];
+  const popular = [
+    { name: "United Colors" },
+    { name: "Burton London" },
+    { name: "Calvin Clein Jeans" },
+    { name: "Top Ten" },
+    { name: "Armyni" },
+  ];
+  const WomenfootWere = [
+    { name: "Casual Shoes" },
+    { name: "Formal Shoes" },
+    { name: "Sports Shoes" },
+    { name: "Party  Shoes" },
+    { name: "Slippers" },
+  ];
+  const WomenClothing = [
+    { name: "Casual Shirt" },
+    { name: "T-Shirts" },
+    { name: "Collared Tees" },
+    { name: "Sweamwear" },
+    { name: "Pants" },
+  ];
 
   return (
     <nav className="primary-menu style-ecommerce menu-spacing-margin">
       <ul className="menu-container">
         <li className="menu-item current">
-          <Link as={Link} to="/home" className="menu-link" href="#">
+          <Link as={Link} to="/home" className="menu-link">
             <div>Home</div>
           </Link>
         </li>
         <li className="menu-item mega-menu">
-          <a className="menu-link" href="#">
+          <a className="menu-link" href="/allProduct">
             <div>Men</div>
           </a>
-          <div
+          {/* <div
             className="mega-menu-content mega-menu-style-2"
             style={{
               background: "url('../../../image/items/3-3.jpg'),",
@@ -236,43 +241,42 @@ const WomenClothing=[
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </li>
         <li className="menu-item mega-menu mega-menu-small">
-          <a className="menu-link" href="#">
+          <a className="menu-link" href="/allProduct">
             <div>Women</div>
           </a>
           <div className="mega-menu-content mega-menu-style-2">
             <div className="container">
               <div className="row">
                 <ul className="sub-menu-container mega-menu-column col-lg-6">
-                
                   <li className="menu-item mega-menu-title">
-                    <a className="menu-link" href="#">
+                    <Link as={Link} to="/allProduct" className="menu-link">
                       <div>Footwear</div>
-                    </a>
-                    <ul className="sub-menu-container">
+                    </Link>
+                    {/* <ul className="sub-menu-container">
                     {
                             WomenfootWere.map((p=><li className="menu-item">
                                 <a href="#" className="menu-link">{p.name}</a>
                             </li>))
                         }
                      
-                    </ul>
+                    </ul> */}
                   </li>
                 </ul>
                 <ul className="sub-menu-container mega-menu-column col-lg-6">
                   <li className="menu-item mega-menu-title">
-                    <a className="menu-link" href="#">
+                    <Link as={Link} to="/allProduct" className="menu-link">
                       <div>Clothing</div>
-                    </a>
-                    <ul className="sub-menu-container">
+                    </Link>
+                    {/* <ul className="sub-menu-container">
                     {
                             WomenClothing.map((p=><li className="menu-item">
                                 <a href="#" className="menu-link">{p.name}</a>
                             </li>))
                         }
-                    </ul>
+                    </ul> */}
                   </li>
                 </ul>
               </div>
@@ -280,24 +284,24 @@ const WomenClothing=[
           </div>
         </li>
         <li className="menu-item">
-          <a className="menu-link" href="#">
+          <Link as={Link} to="/allProduct" className="menu-link">
             <div>Accessories</div>
-          </a>
+          </Link>
         </li>
         <li className="menu-item">
-          <a className="menu-link" href="#">
+          <Link as={Link} to="/allProduct" className="menu-link">
             <div>Sale</div>
-          </a>
+          </Link>
         </li>
         <li className="menu-item">
-          <a className="menu-link" href="#">
+          <Link as={Link} to="/blog" className="menu-link">
             <div>Blog</div>
-          </a>
+          </Link>
         </li>
         <li className="menu-item">
-          <a className="menu-link" href="#">
+          <Link as={Link} to="/contact" className="menu-link">
             <div>Contact</div>
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

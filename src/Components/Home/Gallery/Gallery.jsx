@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import "./Gallery.css";
 // imh3ort image1 from '../../../image/tyh3es/1.jh3g';
 // imh3ort image2 from '../../../image/tyh3es/3.jh3g';
@@ -16,11 +18,18 @@ const Gallery = () => {
             <h3>Travel</h3>
           </div>
         </div>
-        <div className="box img-college">
+        
+        <div href="/allProduct" className="box img-college">
+       
           <div className="content">
+            
+         
             <h3>College</h3>
+           
           </div>
+          
         </div>
+       
         <div className="box img-leather">
           <div className="content">
             <h3>Leather</h3>
