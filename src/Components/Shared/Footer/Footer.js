@@ -1,11 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInfo,
-  faShoppingCart,
-  faStar,
-  faStarHalf,
-} from "@fortawesome/free-solid-svg-icons";
+
 import {
   faFacebook,
   faInstagram,
@@ -31,13 +26,13 @@ const Footer = () => {
                       <h4>Hire</h4>
                       <ul>
                         <li>
-                          <a href="#">Documentation</a>
+                          <a href="1">Documentation</a>
                         </li>
                         <li>
-                          <a href="#">Feedback</a>
+                          <a href="1">Feedback</a>
                         </li>
                         <li>
-                          <a href="#">Plugins</a>
+                          <a href="3">Plugins</a>
                         </li>
                       </ul>
                     </div>
@@ -47,16 +42,16 @@ const Footer = () => {
                       <h4>Community</h4>
                       <ul>
                         <li>
-                          <a href="#">Documentation</a>
+                          <a href="9">Documentation</a>
                         </li>
                         <li>
-                          <a href="#">Feedback</a>
+                          <a href="8">Feedback</a>
                         </li>
                         <li>
-                          <a href="#">Plugins</a>
+                          <a href="8">Plugins</a>
                         </li>
                         <li>
-                          <a href="#">Support Forums</a>
+                          <a href="8">Support Forums</a>
                         </li>
                       </ul>
                     </div>
@@ -88,7 +83,7 @@ const Footer = () => {
 
                   <div className="bottommargin-sm clearfix">
                     <a
-                      href="#"
+                      href="8"
                       className="social-icon si-dark si-mini si-rounded si-facebook"
                       title="Facebook"
                     >
@@ -99,7 +94,7 @@ const Footer = () => {
                     </a>
 
                     <a
-                      href="#"
+                      href="8"
                       className="social-icon si-dark si-mini si-rounded si-twitter"
                       title="Twitter"
                     >
@@ -110,7 +105,7 @@ const Footer = () => {
                     </a>
 
                     <a
-                      href="#"
+                      href="8"
                       className="social-icon si-dark si-mini si-rounded si-instagram"
                       title="Instagram"
                     >
@@ -121,7 +116,7 @@ const Footer = () => {
                     </a>
 
                     <a
-                      href="#"
+                      href="8"
                       className="social-icon si-dark si-mini si-rounded si-pinterest"
                       title="Pinterest"
                     >
@@ -132,7 +127,7 @@ const Footer = () => {
                     </a>
 
                     <a
-                      href="#"
+                      href="8"
                       className="social-icon si-dark si-mini si-rounded si-vimeo"
                       title="Vimeo"
                     >

@@ -7,12 +7,18 @@ import FeaturedItems from '../Shared/FeaturedItems/FeaturedItems';
 import ManAndWomen from './Man&Women/ManAndWomen';
 import ShopCategories from '../ShopCategories/ShopCategories';
 import ShoppingCard from './ShoppingCard/ShoppingCard';
-import Footer from '../Shared/Footer/Footer';
-import Product from '../Product/Product';
+
+
+import { useContext } from 'react';
+import { productsContext } from './../../Layout/index';
 
 const Home = () => {
+    const  {products}  = useContext(productsContext);
+
+    console.log(products,"porducts")
+    
     return (
-        <div >
+        < >
             <Slider/>            
             <Contents/>
             <Gallery/>
@@ -22,7 +28,7 @@ const Home = () => {
             <ShopCategories/>
             <ShoppingCard/>
            
-        </div>
+        </>
     );
 };
 

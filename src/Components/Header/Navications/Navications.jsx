@@ -1,46 +1,36 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInfo,
-  faShoppingCart,
-  faStar,
-  faStarHalf,
-} from "@fortawesome/free-solid-svg-icons";
-
-import grayBag from "../../../image/items/1-1.jpg";
-import itemImgae1 from "../../../image/items/2-1.jpg";
-import itemImgae2 from "../../../image/items/3-1.jpg";
-import itemImgae3 from "../../../image/items/4-1.jpg";
 import { Link } from "react-router-dom";
+
 const Navications = () => {
-  const categories = [
-    { name: "Backpacks" },
-    { name: "Leather Bag" },
-    { name: "Travel Bag" },
-    { name: "Trolley" },
-    { name: "Workout Bag" },
-  ];
-  const popular = [
-    { name: "United Colors" },
-    { name: "Burton London" },
-    { name: "Calvin Clein Jeans" },
-    { name: "Top Ten" },
-    { name: "Armyni" },
-  ];
-  const WomenfootWere = [
-    { name: "Casual Shoes" },
-    { name: "Formal Shoes" },
-    { name: "Sports Shoes" },
-    { name: "Party  Shoes" },
-    { name: "Slippers" },
-  ];
-  const WomenClothing = [
-    { name: "Casual Shirt" },
-    { name: "T-Shirts" },
-    { name: "Collared Tees" },
-    { name: "Sweamwear" },
-    { name: "Pants" },
-  ];
+
+  // const categories = [
+  //   { name: "Backpacks" },
+  //   { name: "Leather Bag" },
+  //   { name: "Travel Bag" },
+  //   { name: "Trolley" },
+  //   { name: "Workout Bag" },
+  // ];
+  // const popular = [
+  //   { name: "United Colors" },
+  //   { name: "Burton London" },
+  //   { name: "Calvin Clein Jeans" },
+  //   { name: "Top Ten" },
+  //   { name: "Armyni" },
+  // ];
+  // const WomenfootWere = [
+  //   { name: "Casual Shoes" },
+  //   { name: "Formal Shoes" },
+  //   { name: "Sports Shoes" },
+  //   { name: "Party  Shoes" },
+  //   { name: "Slippers" },
+  // ];
+  // const WomenClothing = [
+  //   { name: "Casual Shirt" },
+  //   { name: "T-Shirts" },
+  //   { name: "Collared Tees" },
+  //   { name: "Sweamwear" },
+  //   { name: "Pants" },
+  // ];
 
   return (
     <nav className="primary-menu style-ecommerce menu-spacing-margin">

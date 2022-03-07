@@ -30,7 +30,7 @@ const Contents = () => {
           <div className="col-md-2">
             <div className="grid-info clearfix content-text">
               <h3>
-                <a href="#">
+                <a href="1">
                   Acessories
                   <span>Check out more Products for your Lifestyles</span>
                 </a>
@@ -46,7 +46,7 @@ const Contents = () => {
           <div className="col-md-2">
             <div className="grid-info clearfix content-text">
               <h3>
-                <a href="">
+                <a href="1">
                   Our Store<span>Where we Manufacture!</span>
                 </a>
               </h3>

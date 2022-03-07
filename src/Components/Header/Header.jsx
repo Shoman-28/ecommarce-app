@@ -4,11 +4,10 @@ import Navications from "./Navications/Navications";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faSearch,
-  faShoppingBag,
   faTimes,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import { useForm } from "react-hook-form";
+
 
 const Header = () => {
   

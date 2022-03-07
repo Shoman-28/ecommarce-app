@@ -1,9 +1,6 @@
-import Button from "@restart/ui/esm/Button";
-import React, { useContext } from "react";
-import { Card } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
-import { productsContext } from "../../../App";
+
+import React from "react";
+
 import ProductCard from "../ProductCard/ProductCard";
 
 const BestSellProductCard = () => {
