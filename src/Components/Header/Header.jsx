@@ -18,13 +18,13 @@ const Header = () => {
     <div id="header" className="full-header no-sticky" data-menu-padding="30">
       <div id="header-wrap">
         <div className="contain">
-          <div className="header-row align-items-lg-stretch">
+          <div className="header-row align-items-center-stretch">
             <div id="logo">
-              <a href="index.html" className="standard-logo">
+              <a href="/" className="standard-logo">
                 <img src="../../images/logo.png" alt="Canvas" />
               </a>
             </div>
-            <div className="header-misc align-items-lg-stretch">
+            <div className="header-misc align-items-center-stretch">
               <HeaderCard />
               <div className="header-misc-icon">
                 <span>

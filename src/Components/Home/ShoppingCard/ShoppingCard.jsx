@@ -24,7 +24,7 @@ const ShoppingCard = () => {
         <div className="container clearfix">
           <div className="row payments-info">
             <div className="col-lg-6">
-              <p className="lead m-0" style={{color:'#fff', lineHeight: '1.8', fontSize:'1.25rem', fontWeight:'300', fontFamily:'"lato", sans-serif'}}>
+              <p className="lead m-0" style={{color:'#716363', lineHeight: '1.8', fontSize:'1.25rem', fontWeight:'300', fontFamily:'"lato", sans-serif'}}>
                 Free Shipping on Orders of <strong>$199</strong> or above.
               </p>
             </div>

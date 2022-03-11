@@ -41,7 +41,7 @@ const Navications = () => {
           </Link>
         </li>
         <li className="menu-item mega-menu">
-          <a className="menu-link" href="/allProduct">
+          <a className="menu-link" href="/men">
             <div>Men</div>
           </a>
           {/* <div
@@ -234,7 +234,7 @@ const Navications = () => {
           </div> */}
         </li>
         <li className="menu-item mega-menu mega-menu-small">
-          <a className="menu-link" href="/allProduct">
+          <a className="menu-link" href="/women">
             <div>Women</div>
           </a>
           <div className="mega-menu-content mega-menu-style-2">
@@ -242,7 +242,7 @@ const Navications = () => {
               <div className="row">
                 <ul className="sub-menu-container mega-menu-column col-lg-6">
                   <li className="menu-item mega-menu-title">
-                    <Link as={Link} to="/allProduct" className="menu-link">
+                    <Link as={Link} to="/footwear" className="menu-link">
                       <div>Footwear</div>
                     </Link>
                     {/* <ul className="sub-menu-container">
@@ -257,7 +257,7 @@ const Navications = () => {
                 </ul>
                 <ul className="sub-menu-container mega-menu-column col-lg-6">
                   <li className="menu-item mega-menu-title">
-                    <Link as={Link} to="/allProduct" className="menu-link">
+                    <Link as={Link} to="/clothing" className="menu-link">
                       <div>Clothing</div>
                     </Link>
                     {/* <ul className="sub-menu-container">
@@ -274,12 +274,12 @@ const Navications = () => {
           </div>
         </li>
         <li className="menu-item">
-          <Link as={Link} to="/allProduct" className="menu-link">
+          <Link as={Link} to="/accessories" className="menu-link">
             <div>Accessories</div>
           </Link>
         </li>
         <li className="menu-item">
-          <Link as={Link} to="/allProduct" className="menu-link">
+          <Link as={Link} to="/sale" className="menu-link">
             <div>Sale</div>
           </Link>
         </li>

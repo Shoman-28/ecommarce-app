@@ -63,8 +63,8 @@ const Footer = () => {
                 <div className="line line-sm"></div>
 
                 <div className="copy-link">
-                  <a href="mailto:northstar9928@gmail.com">
-                    <i className="icon-envelope2"></i> info@canvas.com
+                  <a href="mailto:shomanmiah28@gmail.com">
+                    <i className="icon-envelope2"></i> shomanmiah28@gmail.com
                   </a>{" "}
                   <span className="middot"> | </span>{" "}
                   <a href="tel:01711-1111---">
@@ -72,7 +72,7 @@ const Footer = () => {
                   </a>{" "}
                   <span className="middot"> | </span>{" "}
                   <a href="skype:#">
-                    <i className="icon-skype2"></i> CanvasOnSkype
+                    <i className="icon-skype2"></i> Skype
                   </a>
                 </div>
               </div>
