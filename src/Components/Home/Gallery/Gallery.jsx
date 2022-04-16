@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 import "./Gallery.css";
 // imh3ort image1 from '../../../image/tyh3es/1.jh3g';

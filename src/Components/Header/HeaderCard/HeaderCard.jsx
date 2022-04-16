@@ -1,12 +1,19 @@
 import React, { useContext, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
-import { productsContext } from "../../../App";
+
 import { Modal } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.css";
 import { Link } from "react-router-dom";
+import { productsContext } from './../../../Layout/index';
+
+
+
 const HeaderCard = () => {
-  const { products } = useContext(productsContext);
+
+   const  {products}  = useContext(productsContext);
+
+
   const [show, setShow] = useState(false);
 
   const cardProductsClose = () => {
@@ -34,13 +41,13 @@ const HeaderCard = () => {
             {products?.cart?.map((pd, index) => (
               <div className="top-cart-item">
                 <div className="top-cart-item-image">
-                  <a href="1232">
+                  <a href="">
                     <img src={pd.img} alt="Blue Round-Neck Tshirt" />
                   </a>
                 </div>
                 <div className="top-cart-item-desc">
                   <div className="top-cart-item-desc-title">
-                    <a href="123">{pd.name}</a>
+                    <a href="">{pd.name}</a>
                     <span className="top-cart-item-price d-block">
                       {pd.price}
                     </span>

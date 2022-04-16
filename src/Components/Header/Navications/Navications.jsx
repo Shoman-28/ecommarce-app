@@ -1,46 +1,36 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faInfo,
-  faShoppingCart,
-  faStar,
-  faStarHalf,
-} from "@fortawesome/free-solid-svg-icons";
-
-import grayBag from "../../../image/items/1-1.jpg";
-import itemImgae1 from "../../../image/items/2-1.jpg";
-import itemImgae2 from "../../../image/items/3-1.jpg";
-import itemImgae3 from "../../../image/items/4-1.jpg";
 import { Link } from "react-router-dom";
+
 const Navications = () => {
-  const categories = [
-    { name: "Backpacks" },
-    { name: "Leather Bag" },
-    { name: "Travel Bag" },
-    { name: "Trolley" },
-    { name: "Workout Bag" },
-  ];
-  const popular = [
-    { name: "United Colors" },
-    { name: "Burton London" },
-    { name: "Calvin Clein Jeans" },
-    { name: "Top Ten" },
-    { name: "Armyni" },
-  ];
-  const WomenfootWere = [
-    { name: "Casual Shoes" },
-    { name: "Formal Shoes" },
-    { name: "Sports Shoes" },
-    { name: "Party  Shoes" },
-    { name: "Slippers" },
-  ];
-  const WomenClothing = [
-    { name: "Casual Shirt" },
-    { name: "T-Shirts" },
-    { name: "Collared Tees" },
-    { name: "Sweamwear" },
-    { name: "Pants" },
-  ];
+
+  // const categories = [
+  //   { name: "Backpacks" },
+  //   { name: "Leather Bag" },
+  //   { name: "Travel Bag" },
+  //   { name: "Trolley" },
+  //   { name: "Workout Bag" },
+  // ];
+  // const popular = [
+  //   { name: "United Colors" },
+  //   { name: "Burton London" },
+  //   { name: "Calvin Clein Jeans" },
+  //   { name: "Top Ten" },
+  //   { name: "Armyni" },
+  // ];
+  // const WomenfootWere = [
+  //   { name: "Casual Shoes" },
+  //   { name: "Formal Shoes" },
+  //   { name: "Sports Shoes" },
+  //   { name: "Party  Shoes" },
+  //   { name: "Slippers" },
+  // ];
+  // const WomenClothing = [
+  //   { name: "Casual Shirt" },
+  //   { name: "T-Shirts" },
+  //   { name: "Collared Tees" },
+  //   { name: "Sweamwear" },
+  //   { name: "Pants" },
+  // ];
 
   return (
     <nav className="primary-menu style-ecommerce menu-spacing-margin">
@@ -51,7 +41,7 @@ const Navications = () => {
           </Link>
         </li>
         <li className="menu-item mega-menu">
-          <a className="menu-link" href="/allProduct">
+          <a className="menu-link" href="/men">
             <div>Men</div>
           </a>
           {/* <div
@@ -244,7 +234,7 @@ const Navications = () => {
           </div> */}
         </li>
         <li className="menu-item mega-menu mega-menu-small">
-          <a className="menu-link" href="/allProduct">
+          <a className="menu-link" href="/women">
             <div>Women</div>
           </a>
           <div className="mega-menu-content mega-menu-style-2">
@@ -252,7 +242,7 @@ const Navications = () => {
               <div className="row">
                 <ul className="sub-menu-container mega-menu-column col-lg-6">
                   <li className="menu-item mega-menu-title">
-                    <Link as={Link} to="/allProduct" className="menu-link">
+                    <Link as={Link} to="/footwear" className="menu-link">
                       <div>Footwear</div>
                     </Link>
                     {/* <ul className="sub-menu-container">
@@ -267,7 +257,7 @@ const Navications = () => {
                 </ul>
                 <ul className="sub-menu-container mega-menu-column col-lg-6">
                   <li className="menu-item mega-menu-title">
-                    <Link as={Link} to="/allProduct" className="menu-link">
+                    <Link as={Link} to="/clothing" className="menu-link">
                       <div>Clothing</div>
                     </Link>
                     {/* <ul className="sub-menu-container">
@@ -284,12 +274,12 @@ const Navications = () => {
           </div>
         </li>
         <li className="menu-item">
-          <Link as={Link} to="/allProduct" className="menu-link">
+          <Link as={Link} to="/accessories" className="menu-link">
             <div>Accessories</div>
           </Link>
         </li>
         <li className="menu-item">
-          <Link as={Link} to="/allProduct" className="menu-link">
+          <Link as={Link} to="/sale" className="menu-link">
             <div>Sale</div>
           </Link>
         </li>

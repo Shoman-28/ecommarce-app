@@ -1,9 +1,13 @@
 import React, { useContext } from "react";
 import { Table } from "react-bootstrap";
-import { productsContext } from "../../App";
+import { productsContext } from './../../Layout/index';
+
+
 
 const AddToCard = () => {
+
   const { products } = useContext(productsContext);
+
   return (
     <div className="container">
       <Table>
@@ -22,9 +26,10 @@ const AddToCard = () => {
               <td className="custom-table">
                 <img
                   src={p.img}
-                  alt="image"
+                  alt="cardPhoto"
                   style={{ width: "64px", height: "64px" }}
                 />
+                
               </td>
               <td className="custom-table"> {p.name}</td>
               <td className="custom-table">${p.price}</td>

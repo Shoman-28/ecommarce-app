@@ -5,9 +5,11 @@ import {
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./Card.css";
-import { productsContext } from "../../../App";
+import { productsContext } from './../../../Layout/index';
+
+
 
 
 
@@ -24,6 +26,7 @@ const ProductCard = () => {
 
     localStorage.setItem("cart", JSON.stringify(newCart.cart));
   };
+  
   return (
     <>
     

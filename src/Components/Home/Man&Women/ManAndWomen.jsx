@@ -1,7 +1,5 @@
 import React from "react";
 import "./ManAndWomen.css";
-import manImage from "../../../image/sections/1.jpg";
-import womenImage from "../../../image/sections/3.jpg";
 const ManAndWomen = () => {
   return (
     <div className="mb-5 pb-5">
@@ -15,7 +13,7 @@ const ManAndWomen = () => {
                 materials for comfort and lasting quality in a complete bedding
                 package..
               </p>
-              <a href="#">Go to shop</a>
+              <a href="1">Go to shop</a>
             </div>
           </div>
         </div>
@@ -28,7 +26,7 @@ const ManAndWomen = () => {
                 materials for comfort and lasting quality in a complete bedding
                 package.
               </p>
-              <a href="#">Go to shop</a>
+              <a href="1">Go to shop</a>
             </div>
           </div>
         </div>

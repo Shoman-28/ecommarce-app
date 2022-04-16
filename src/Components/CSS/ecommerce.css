@@ -1,5 +1,5 @@
 
-@media (min-width: 992px) {
+@media (max-width: 988px) {
 
 	body.stretched #header.full-header .container { padding-right: 0; }
 
@@ -520,7 +520,7 @@
 .social-icon.si-mini {
 	width: 24px;
 	height: 24px;
-	font-size: 11px;
+	font-size: 25px !important;
 	line-height: 23px !important;
 }
 

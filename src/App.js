@@ -1,13 +1,11 @@
 import "./App.css";
+import React from "react";
 import "./Components/CSS/ecommerce.css";
 import "./Components/CSS/fonts.css";
 import "./Components/CSS/style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./Components/Home/Home";
-import Header from "./Components/Header/Header";
-import AddToCard from "./Components/AddToCard/AddToCard";
-import { createContext, useState, useEffect } from "react";
 
+<<<<<<< HEAD
 import  AddProduct  from "./AdminPanal/AddProduct/AddProduct";
 
 import productImg0 from "./image/shopping/shopping-0.jpg";
@@ -18,88 +16,25 @@ import productImg4 from "./image/shopping/shopping-4.jpg";
 import productImg5 from "./image/shopping/shopping-5.jpg";
 import productImg6 from "./image/shopping/shopping-6.jpg";
 import productImg7 from "./image/shopping/shopping-7.jpg";
+=======
+>>>>>>> 80436d1b132ec01d6cf13e435c22903cf0dc7896
 
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import AllProduct from "./Components/BestSellProduct/ProductCard/ProductCard";
-import Footer from "./Components/Shared/Footer/Footer";
-import Blog from "./Components/Blog/Blog";
-import Contact from "./Components/ContactPage/Contact";
 
-export const productsContext = createContext();
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+import Authmiddlewar from "./routes/route";
+import { authProtectedRoutes, publicRoutes } from "./routes/index";
+import LayOut from "./Layout";
 
-export const baseUrl = process.env.REACT_APP_BACKEND_URL;
 
-function App() {
-  const product = [
-    {
-      id: 1,
-      name: "Sun glasses and shopping bags",
-      price: "11.09",
-      img: productImg0,
-      quantity: 1,
-    },
-    {
-      id: 2,
-      name: "Grey Messenger Bag",
-      price: "21.89",
-      img: productImg1,
-      quantity: 3,
-    },
-    {
-      id: 3,
-      name: "Grey Messenger Bag",
-      price: "15.69",
-      img: productImg2,
-      quantity: 1,
-    },
-    {
-      id: 4,
-      name: "Grey Messenger Bag",
-      price: "61.40",
-      img: productImg3,
-      quantity: 2,
-    },
-    {
-      id: 5,
-      name: "Grey Messenger Bag",
-      price: "22.55",
-      img: productImg4,
-      quantity: 3,
-    },
-    {
-      id: 6,
-      name: "Grey Messenger Bag",
-      price: "31.30",
-      img: productImg5,
-      quantity: 2,
-    },
-    {
-      id: 7,
-      name: "Grey Messenger Bag",
-      price: "43.10",
-      img: productImg6,
-      quantity: 1,
-    },
-    {
-      id: 8,
-      name: "Grey Messenger Bag",
-      price: "32.33",
-      img: productImg7,
-      quantity: 3,
-    },
-  ];
-  const [products, setProducts] = useState({ pds: product, cart: [] });
 
-  useEffect(() => {
-    if (localStorage.getItem("cart")) {
-      const cart = JSON.parse(localStorage.getItem("cart"));
-      setProducts({ ...products, cart: cart });
-    }
-  }, []);
+// export const baseUrl = process.env.REACT_APP_BACKEND_URL;
+
+const App = (props) => {
   return (
-    <productsContext.Provider value={{ products, setProducts }}>
+    <React.Fragment>
       <Router>
         <Switch>
+<<<<<<< HEAD
         <Route path="/admin">
             <AddProduct />
               
@@ -135,10 +70,33 @@ function App() {
             <Home />
             <Footer />
           </Route>
+=======
+          {publicRoutes.map((route, idx) => (
+            <Authmiddlewar
+              path={route.path}
+              layout={LayOut}
+              component={route.component}
+              key={idx}
+              isAuthProtected={false}
+              exact
+            />
+          ))}
+
+          {authProtectedRoutes.map((route, idx) => (
+            <Authmiddlewar
+              path={route.path}
+              component={route.component}
+              layout={LayOut}
+              key={idx}
+              isAuthProtected={false}
+              exact
+            />
+          ))}
+>>>>>>> 80436d1b132ec01d6cf13e435c22903cf0dc7896
         </Switch>
       </Router>
-    </productsContext.Provider>
+    </React.Fragment>
   );
-}
+};
 
 export default App;
