@@ -8,6 +8,8 @@ import Header from "./Components/Header/Header";
 import AddToCard from "./Components/AddToCard/AddToCard";
 import { createContext, useState, useEffect } from "react";
 
+import  AddProduct  from "./AdminPanal/AddProduct/AddProduct";
+
 import productImg0 from "./image/shopping/shopping-0.jpg";
 import productImg1 from "./image/shopping/shopping-1.jpg";
 import productImg2 from "./image/shopping/shopping-2.jpg";
@@ -98,6 +100,10 @@ function App() {
     <productsContext.Provider value={{ products, setProducts }}>
       <Router>
         <Switch>
+        <Route path="/admin">
+            <AddProduct />
+              
+          </Route>
           <Route path="/home">
             <Header />
               <Home />
@@ -121,6 +127,7 @@ function App() {
           <Route path="/contact">
             <Header />
             <Contact/>
+            
             <Footer />
           </Route>
           <Route exact path="/">
